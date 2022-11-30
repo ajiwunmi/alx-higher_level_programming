@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for i in range(128):
-    print("{}".format(chr(i).lower()))
+for i in range(97, 123):
+    # print("{:c}".format(chr(i).lower()))
+    print("{:c}".format(i), end="")
