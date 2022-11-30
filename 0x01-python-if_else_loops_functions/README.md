@@ -1,1 +1,1 @@
-### Positive anything is better than negative nothing
+This Directory contains tasks on loops and functions
