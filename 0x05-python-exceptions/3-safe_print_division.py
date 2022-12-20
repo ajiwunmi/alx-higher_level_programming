@@ -7,10 +7,11 @@ def safe_print_division(a, b):
             The value of the division, otherwise: None
     """
     try:
-        result = a/b
-    except ZeroDivisionError:
+        result = a / b
+    except (ZeroDivisionError, TypeError):
         result = None
     finally:
         print("Inside Result:{}".format(result))
-    print("")
+
+    print()
     return result

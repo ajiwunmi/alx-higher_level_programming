@@ -8,12 +8,14 @@ def safe_print_list_integers(my_list=[], x=0):
         real number (int) of integers printed
     """
     i = 0
-    for item in my_list:
+    for i in range(x):
         try:
-            if i < x :
-                print("{:d}".format(item), end="")
-                i += 1
-        except (IndexError, TypeError,ValueError):
-            print(end='')
-    print("")
+            print("{:d}".format(my_list[i]), end="")
+        except TypeError:
+            pass
+        except ValueError:
+            pass
+        else:
+            i += 1
+    print()
     return i
