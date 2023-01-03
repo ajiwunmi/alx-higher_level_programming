@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Define Class recatagle """
+
 class Rectangle:
-    """An empty class Rectangle"""
+    """Class reactagle"""
     pass
