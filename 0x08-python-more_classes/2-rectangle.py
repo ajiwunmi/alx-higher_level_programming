@@ -28,6 +28,7 @@ class Rectangle:
 
     @property
     def height(self):
+        """Set the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -39,9 +40,7 @@ class Rectangle:
         self.__height = height
 
     def area(self):
-        """Calculate the area of rectangle
-        Args :
-        """
+        """Calculate the area of rectangle"""
         return (self.__height * self.__width)
 
     def perimeter(self):
