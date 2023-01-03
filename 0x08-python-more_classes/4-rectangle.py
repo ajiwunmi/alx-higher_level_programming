@@ -67,5 +67,6 @@ class Rectangle:
         """Return a string representation of the rectangle.
         To recreate a new instance by using eval()
         """
-        repr = "Rectangle("+ str(self.__width) + ", "+ str(self.__height) + ")"
+        repr = "Rectangle(" + str(self.__width)
+        repr += ", " + str(self.__height) + ")"
         return (repr)
