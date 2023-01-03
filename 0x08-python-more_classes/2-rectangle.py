@@ -16,6 +16,7 @@ class Rectangle:
 
     @property
     def width(self):
+        """Set the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -41,7 +42,7 @@ class Rectangle:
 
     def area(self):
         """Calculate the area of rectangle"""
-        return (self.__height * self.__width)
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """Calculate the permiter of a rectangle"""
