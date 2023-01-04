@@ -9,7 +9,7 @@ class Rectangle:
     """
 
     number_of_instances = 0
-    print_symbol ='#'
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
@@ -65,7 +65,8 @@ class Rectangle:
             return("")
         rectangle = []
         for i in range(self.height):
-            [rectangle.append(str(self.print_symbol)) for j in range(self.__width)]
+            [rectangle.append(str(self.print_symbol))
+                for j in range(self.__width)]
             if i != self.__height - 1:
                 rectangle.append("\n")
         return ("".join(rectangle))
@@ -99,13 +100,11 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return(rect_1)
         return(rect_2)
-    
+
     @classmethod
     def square(cls, size=0):
         """returns a new Rectangle instance with width == height == size
-        Args: 
-            size(int) - size of rectangle 
+        Args:
+        size(int) - size of rectangle
         """
         return(cls(size, size))
-    
-
